@@ -323,30 +323,12 @@ The paper may have:
 | **Overall** | ⭐⭐⭐⭐☆ | **Strong reproducibility** with noted differences |
 
 
----
-
-## 9. Practical Implications
-
-### 9.1 Model Utility
-
-**Strengths:**
-- High recall (92%): Good for discovery/screening
-- Fast inference: 200-400 sequences/second on GPU
-- Interpretable features: K-mers reveal conserved motifs
-- Accessible: Runs on free Google Colab
-
-**Limitations:**
-- Moderate precision (81%): ~1 in 5 positive predictions may be incorrect
-- Requires validation: Cannot replace experimental testing
-- LAB-specific: Not suitable for general bacteriocin prediction
-- Sequence length bias: May favor longer sequences
-
 
 ---
 
-## 10. Conclusions
+## 9. Conclusions
 
-### 10.1 Key Findings Summary
+### 9.1 Key Findings Summary
 
 1. **Reproduction Success:** We successfully implemented the BacLABNet architecture and training protocol, achieving reasonable classification performance (85% accuracy, 86% F1 score).
 
@@ -358,7 +340,7 @@ The paper may have:
 
 5. **Biological Validity:** The model successfully learns LAB-specific patterns, as evidenced by strong performance on the biologically motivated 5-mers + 7-mers feature set.
 
-### 12.2 Reproducibility Verdict
+### 9.2 Reproducibility Verdict
 
 **Overall Assessment: PARTIALLY REPRODUCIBLE**
 
