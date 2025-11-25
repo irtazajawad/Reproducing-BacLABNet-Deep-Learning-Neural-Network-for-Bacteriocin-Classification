@@ -310,49 +310,9 @@ The paper may have:
 
 ---
 
-## 8. Biological Interpretation
+## 8. Reproducibility Assessment
 
-### 8.1 High Recall Performance (92.34%)
-
-**Positive Aspect:**
-- Model excels at identifying true BacLAB sequences
-- Only 12.5% false negative rate
-- Good for discovery applications (screening large databases)
-
-**Biological Relevance:**
-- Captures conserved LAB bacteriocin motifs effectively
-- YGNGV/YGNGL patterns (5-mers) well-represented
-- YGNGVXC sequences (7-mers) recognized
-
-### 8.2 Precision Trade-off (80.57%)
-
-**Challenge:**
-- 13.8% false positive rate
-- Non-BacLAB sequences occasionally match LAB patterns
-- Could result in wasted laboratory validation effort
-
-**Potential Causes:**
-- Convergent evolution (similar motifs in non-LAB bacteriocins)
-- Class IIa pediocin-like sequences exist outside LAB
-- K-mer features may not be perfectly LAB-specific
-
-### 8.3 Feature Importance
-
-**5-mers + 7-mers Combination:**
-- Biologically motivated (conserved motifs)
-- Better than longer k-mers (15, 20)
-- Aligns with known bacteriocin structure
-
-**Embedding Vectors:**
-- Capture sequence context beyond local motifs
-- Essential for achieving 85%+ accuracy
-- EV-only baseline: Would likely be 75-80%
-
----
-
-## 9. Reproducibility Assessment
-
-### 9.1 Reproducibility Score
+### 8.1 Reproducibility Score
 
 | Aspect | Score | Notes |
 |--------|-------|-------|
@@ -365,9 +325,9 @@ The paper may have:
 
 ---
 
-## 10. Practical Implications
+## 9. Practical Implications
 
-### 10.1 Model Utility
+### 9.1 Model Utility
 
 **Strengths:**
 - High recall (92%): Good for discovery/screening
@@ -384,9 +344,9 @@ The paper may have:
 
 ---
 
-## 12. Conclusions
+## 10. Conclusions
 
-### 12.1 Key Findings Summary
+### 10.1 Key Findings Summary
 
 1. **Reproduction Success:** We successfully implemented the BacLABNet architecture and training protocol, achieving reasonable classification performance (85% accuracy, 86% F1 score).
 
@@ -416,22 +376,6 @@ The paper may have:
 - ⚠️ Precision-recall balance
 
 **Conclusion:** The paper's methodology is sound and reproducible, but achieving identical results requires additional implementation details (loss function specifics, random seeds, embedding training protocol). The 5% performance gap is within the expected range for deep learning reproductions and does not invalidate the paper's conclusions.
-
-### 12.3 Scientific Impact
-
-**Paper's Contribution:**
-- Demonstrates that LAB-specific bacteriocin classification is feasible
-- Identifies biologically relevant k-mer features
-- Provides an accessible implementation on Google Colab
-- Outperforms previous SMO-based approaches
-
-**Our Validation:**
-- Confirms core methodology is sound
-- Shows results are competitive with related work
-- Identifies areas for improvement (precision)
-- Provides optimized, production-ready code
-
-
 ---
 
 ## Appendix: Technical Specifications
