@@ -404,5 +404,3 @@ The paper may have:
 - CPU: 4-8 hours total
 - GPU (T4): 10-15 minutes total
 - Embedding extraction: 2-5 minutes (GPU)
-
----
